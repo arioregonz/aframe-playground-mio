@@ -20,17 +20,17 @@
         <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
         </a-entity>
         <a-entity id = "objects" scale = "1 1 1" grabbable position="0 0 0">           
-          <a-assets>
-            <a-asset-item id="icescape_1_alion_moon_skybox" src="icescape_1_alien_moon_skybox.glb"></a-asset-item>
-          </a-assets>
           <a-box grabbable position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
           <a-sphere grabbable position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
           <a-cylinder grabbable position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
           <a-plane grabbable position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+          <a-sky color="#ECECEC"></a-sky>
         </a-entity>
-        <a-sky gltf-model="#icescape_1_alion_moon_skybox" grabbable position="4 0 -4" rotation="0 45 0"
-        scale="0.25 0.25 0.25"></a-sky>
-    
+        <a-assets>
+          <a-asset-item id="icescape_1_alion_moon_skybox" src="icescape_1_alien_moon_skybox.glb"></a-asset-item>
+        </a-assets>
+        <a-entity gltf-model="#icescape_1_alion_moon_skybox" position="4 0 -4" rotation="0 45 0"
+            scale="0.25 0.25 0.25"></a-entity>     
         <a-entity id="leftHand" hand-tracking-controls="hand: left;"></a-entity>
         <a-entity id="rightHand" hand-tracking-controls="hand: right;"></a-entity>
 
